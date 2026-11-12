@@ -1,0 +1,15 @@
+[project]
+name = "gateway"
+version = "0.1.0"
+description = "Governance gateway for business AI agents"
+requires-python = ">=3.12"
+
+[tool.pytest.ini_options]
+asyncio_mode = "auto"
+testpaths = ["gateway/tests"]
+addopts = "-q --cov=gateway --cov-report=term-missing"
+
+[tool.ruff]
+line-length = 100
+target-version = "py312"
+select = ["E", "F", "I", "UP", "B", "C4"]

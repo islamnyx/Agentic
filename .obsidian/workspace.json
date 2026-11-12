@@ -4,17 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "faea60e761fbaee1",
+        "id": "89a06ec196914b44",
         "type": "tabs",
         "children": [
           {
-            "id": "fbe617fe7173e7db",
+            "id": "a43479d59b58ecae",
             "type": "leaf",
             "state": {
-              "type": "graph",
-              "state": {},
-              "icon": "lucide-git-fork",
-              "title": "Graph view"
+              "type": "markdown",
+              "state": {
+                "file": "technical/learning-todo.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "learning-todo"
             }
           }
         ]
@@ -37,7 +41,7 @@
               "type": "file-explorer",
               "state": {
                 "sortOrder": "byCreatedTime",
-                "autoReveal": false,
+                "autoReveal": true,
                 "showSearch": false,
                 "searchQuery": ""
               },
@@ -181,38 +185,44 @@
       "bases:Create new base": false
     }
   },
-  "active": "fbe617fe7173e7db",
+  "active": "a43479d59b58ecae",
   "lastOpenFiles": [
-    "technical/Security.md",
-    "technical/Slippage.md",
-    "technical/Todo.md",
-    "technical/Phase 0 - Foundations.md",
-    "technical/MVP Criteria.md",
+    "technical/learning-todo.md",
+    "technical/todo.md",
+    "technical/open-source-foundations.md",
+    "planning/company/pillars.md",
+    "technical/stack.md",
+    "planning/company/vision.md",
+    "planning/architecture/control-plane.md",
+    "planning/architecture/modules.md",
+    "gateway/test_gateway.db-journal",
+    "gateway/test_gateway.db",
+    "gateway/tests/__pycache__/test_tools.cpython-314-pytest-9.0.3.pyc",
+    "gateway/tests/__pycache__/test_smoke.cpython-314-pytest-9.0.3.pyc",
+    "gateway/tests/__pycache__/test_phase5.cpython-314-pytest-9.0.3.pyc",
+    "gateway/tests/__pycache__/test_phase4.cpython-314-pytest-9.0.3.pyc",
+    "gateway/tests/__pycache__/test_phase3.cpython-314-pytest-9.0.3.pyc",
+    "gateway/tests/__pycache__/test_phase2.cpython-314-pytest-9.0.3.pyc",
+    "gateway/tests/__pycache__/test_phase1.cpython-314-pytest-9.0.3.pyc",
+    "gateway/tests/__pycache__/test_agt_policy.cpython-314-pytest-9.0.3.pyc",
     "technical/Index.md",
-    "technical/Ground Rules.md",
-    "technical/Data Model.md",
-    "technical/Week 1 Checklist.md",
-    "technical/Work Split.md",
-    "technical/Phase 8 - Red-Team.md",
-    "technical/Phase 7 - Console.md",
-    "technical/Phase 6 - Cross-Step Policies.md",
-    "technical/Phase 5 - Audit.md",
-    "technical/Phase 4 - Approvals.md",
-    "technical/Phase 3 - Connectors.md",
-    "technical/Phase 2 - Policy Engine.md",
-    "technical/Phase 1 - Gateway Skeleton.md",
-    "technical/Phases Overview.md",
-    "technical/Request Flow.md",
-    "technical/Stack.md",
-    "technical",
-    "Untitled.canvas",
-    "planning/Business Model.md",
-    "planning/Competition.md",
-    "planning/Value Proposition.md",
-    "planning/Risks.md",
-    "planning/Phases.md",
-    "planning",
-    "Planing",
-    "notes"
+    "technical/security-engine.md",
+    "technical/request-flow.md",
+    "planning/product/mvp.md",
+    "planning/Demo Scenario.md",
+    "technical/adr/0003-phase03-tool-evaluation.md",
+    "technical/architecture/modules/security-engine.md",
+    "technical/architecture/modules/agent-studio.md",
+    "planning/product/agent-os-experiences.md",
+    "planning/business-model/revenue-streams.md",
+    "adr/0002-agent-governance-toolkit-review.md",
+    "technical/architecture/modules/dashboards.md",
+    "technical/architecture/modules/approvals.md",
+    "technical/architecture/modules/departments.md",
+    "technical/architecture/modules/knowledge-base.md",
+    "technical/mvp-criteria.md",
+    "technical/ground-rules.md",
+    "technical/Threat Model.md",
+    "Untitled.canvas"
   ]
 }

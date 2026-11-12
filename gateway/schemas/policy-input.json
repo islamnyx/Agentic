@@ -1,0 +1,84 @@
+{
+  "$schema": "https://json-schema.org/draft/2024/10/schema",
+  "$id": "https://gateway.local/schema/policy-input/v1",
+  "title": "Policy Input",
+  "description": "Normalized input presented to OPA for every tool invocation decision.",
+  "type": "object",
+  "required": ["who", "what", "on_what", "context"],
+  "properties": {
+    "who": {
+      "type": "object",
+      "required": ["agent", "owner", "org"],
+      "properties": {
+        "agent": {
+          "type": "object",
+          "required": ["id", "name", "scopes"],
+          "properties": {
+            "id": {"type": "string"},
+            "name": {"type": "string"},
+            "scopes": {"type": "array", "items": {"type": "string"}}
+          }
+        },
+        "owner": {
+          "type": "object",
+          "required": ["id", "role"],
+          "properties": {
+            "id": {"type": "string"},
+            "role": {"type": "string"}
+          }
+        },
+        "org": {
+          "type": "object",
+          "required": ["id"],
+          "properties": {
+            "id": {"type": "string"}
+          }
+        },
+        "delegation_chain": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["actor", "action", "justification"],
+            "properties": {
+              "actor": {"type": "string"},
+              "action": {"type": "string"},
+              "justification": {"type": "string"},
+              "timestamp": {"type": "string", "format": "date-time"}
+            }
+          }
+        }
+      }
+    },
+    "what": {
+      "type": "object",
+      "required": ["tool", "action", "parameters"],
+      "properties": {
+        "tool": {"type": "string"},
+        "action": {"type": "string"},
+        "parameters": {"type": "object"}
+      }
+    },
+    "on_what": {
+      "type": "object",
+      "required": ["resource_type"],
+      "properties": {
+        "resource_type": {"type": "string"},
+        "resource_id": {"type": "string"},
+        "tenant_id": {"type": "string"}
+      }
+    },
+    "context": {
+      "type": "object",
+      "required": ["session_id", "timestamp", "risk_level", "data_labels"],
+      "properties": {
+        "session_id": {"type": "string"},
+        "timestamp": {"type": "string", "format": "date-time"},
+        "risk_level": {"type": "string", "enum": ["low", "medium", "high", "critical"]},
+        "data_labels": {"type": "array", "items": {"type": "string", "enum": ["internal", "customer-supplied", "web"]}},
+        "ip": {"type": "string"},
+        "user_agent": {"type": "string"}
+      }
+    }
+  },
+  "additionalProperties": false
+}

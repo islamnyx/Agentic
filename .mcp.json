@@ -4,7 +4,15 @@
       "command": "npx",
       "args": [
         "@playwright/mcp@latest"
-      ]
+      ],
+      "description": "Browser automation via Playwright MCP, routed through Agent OS gateway MCP proxy"
+    },
+    "agentmemory": {
+      "command": "npx",
+      "args": [
+        "@agentmemory/mcp@latest"
+      ],
+      "description": "Persistent agent memory MCP server, routed through Agent OS gateway MCP proxy"
     }
   }
 }
